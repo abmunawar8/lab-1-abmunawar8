@@ -7,7 +7,7 @@ int main() {
     bool is_overnight = false;
     float shipping_cost = 0.0;
 
-    // Temporary variable to hold the user's 1 or 0 input
+    // Temporary variable to hold the user's input
     char overnight_input;
 
     printf("=== Jungle Shipping Calculator (C23 Edition) ===\n");
@@ -67,4 +67,5 @@ int main() {
     printf("\nTotal Shipping Cost: $%.2f\n", shipping_cost);
 
     return 0;
+
 }
