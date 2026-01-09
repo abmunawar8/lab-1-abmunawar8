@@ -63,15 +63,16 @@ Run your finished `ex3_shipping.c` with the following inputs. What is the final 
 **Test Case A:**
 *   Weight: `10`
 *   Distance: `50`
-*   Overnight: `0`
+*   Overnight: `n`
 *   **Your Result:** $________
 
 **Test Case B:**
 *   Weight: `2`
 *   Distance: `200`
-*   Overnight: `1`
+*   Overnight: `y`
 *   **Your Result:** $________
 
 **Test Case C (Error Check):**
 *   Weight: `-5`
+
 *   **Did your program print an error message?** (Yes/No)
