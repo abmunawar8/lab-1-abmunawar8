@@ -8,13 +8,14 @@ int main() {
     printf("Enter code to disarm: ");
     scanf("%d", &user_input);
 
-    if (user_input = access_code) 
+    if (user_input == access_code) { 
         printf("Access Granted.\n");
         printf("System Disarmed.\n");
+    }
     
     // Note: If they type the wrong code, "Access Denied" should print.
     // If they type the right code, "Access Denied" should NOT print.
-    if (user_input != access_code) {
+    else {
         printf("Access Denied. Alarm triggered!\n");
     }
 

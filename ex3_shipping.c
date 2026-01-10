@@ -39,6 +39,10 @@ int main() {
     // If weight is <= 0 OR distance <= 0:
     // Print "Invalid input" and return 1 (error code).
     // TODO: Write the if statement here...
+    if (weight <= 0 || distance <= 0) {
+        printf("Invalid input");
+        return 1;
+    }
 
 
     // LOGIC STEP 2: Calculate Base Cost
@@ -47,20 +51,31 @@ int main() {
     // - If weight is more than 5kg, add $2.00 for every kg OVER 5.
     //   (Example: 7kg package = $5 base + (2 * $2 extra) = $9)
     // TODO: Write the math/logic here...
-
+    shipping_cost = 5.00;
+    float extra_weight;
+    if (weight > 5) {
+        extra_weight = weight - 5;
+        shipping_cost += extra_weight * 2;
+    }
 
     // LOGIC STEP 3: Distance Surcharge
     // Rules:
     // - If distance is greater than 100km, add $0.10 per km OVER 100.
     // TODO: Write the math/logic here...
-
+    float extra_distance;
+    if (distance > 100) {
+        extra_distance = distance - 100;
+        shipping_cost += extra_distance * 0.10;
+    }
 
     // LOGIC STEP 4: Overnight Delivery Modifier
     // Rules:
     // - Use the 'is_overnight' boolean variable.
     // - If it is true, double the current shipping_cost.
     // TODO: Write the if statement here...
-
+    if (is_overnight) {
+        shipping_cost *= 2;
+    }
 
     // --- YOUR CODE ENDS HERE ---
 
